@@ -3,7 +3,7 @@ class UserMailer < ApplicationMailer
 
   def postmail(contact)
     @contact = contact
-    # @customer_email = contact.email
+    # [todo] リリース前にbcc先を変更、環境変数化
     mail(to: contact.email, bcc: "grunwald.information@gmail.com", subject: '【GrunWald】問い合わせを承りました')
   end
 end
