@@ -4,24 +4,25 @@
 
 # パスワード管理方針
 公開レポジトリのため、各種パスワードやトークンなどはアップロードしない。  
-そのため、以下の対応が必要となる。  
+そのため、それらを環境変数に設定することが必要となる。  
 
-** ローカル環境
 以下の項目を環境変数に設定する。  
 
 ```
-ENV['MAILER_USER'],
+# 設定内容
+ENV['MAILER_USER']
 ENV['MAILER_PASSWORD']
 ```
 
-rails server実行時は以下のコマンドで。  
+## ローカル環境
+rails server実行時は以下のコマンドを使う  
 
 ```
 $ (key)=(value) rails s
 ```
 
-** 本番環境(heroku)
-コマンドラインで設定  
+## 本番環境(heroku)
+herokuコマンドで設定  
 
 ```
 $ heroku config:add (key)=(value)
