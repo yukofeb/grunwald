@@ -15,6 +15,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # gem 'bcrypt', '~> 3.1.7'
 # gem 'unicorn'
 # gem 'capistrano-rails', group: :development
+gem 'omniauth-facebook'
+gem 'koala'
 
 group :development, :test do
   gem 'sqlite3'
