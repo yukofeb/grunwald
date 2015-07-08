@@ -1,0 +1,38 @@
+<% provide(:title, "Contact") %>
+<h1><%= yield(:title) %></h1>
+ <h2>お問い合わせ内容確認</h2>
+
+  <div class="row">
+    <div class="span6 offset3">
+      <%= form_for @contact, :url => contact_thanks_path do |f| %>
+        <%= render 'shared/error_messages', object: f.object %>
+
+        <table class="contact">
+         <tr>
+          <th>お名前</th>
+          <td>
+           <%= f.hidden_field :name %>
+           <%= @contact.name %>
+          </td>
+         </tr>
+         <tr>
+          <th>メール</th>
+          <td>
+           <%= f.hidden_field :email %>
+           <%= @contact.email %>
+          </td>
+         </tr>
+         <tr>
+          <th>お問い合せ内容</th>
+          <td>
+           <%= f.hidden_field :content %>
+           <%= @contact.content %>
+          </td>
+         </tr>
+        </table>
+        <br>
+
+        <%= f.submit "送信", class: "btn btn-large btn-primary" %>
+      <% end %>
+    </div>
+  </div>

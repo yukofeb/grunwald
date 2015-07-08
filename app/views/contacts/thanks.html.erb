@@ -1,0 +1,27 @@
+<% provide(:title, "Contact") %>
+<h1><%= yield(:title) %></h1>
+ <h2>お問い合わせ完了</h2>
+  <p>
+   お問い合わせを承りました。<br>
+   3営業日以内に返信がない場合は、迷惑メールにまぎれていないことを確認いただいた上、<br>
+   再度ご連絡をお願いいたします。
+  </p>
+
+  <div class="row">
+   <div class="span6 offset3">
+    <table class="contact">
+     <tr>
+      <th>お名前</th> 
+      <td><%= @contact.name %></td>
+     </tr>
+     <tr>
+      <th>メール</th> 
+      <td><%= @contact.email %></td>
+     </tr>
+     <tr>
+      <th>お問い合せ内容</th> 
+      <td><%= @contact.content %></td>
+     </tr>
+    </table>
+   </div>
+ </div>
