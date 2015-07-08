@@ -1,3 +1,26 @@
 <% provide(:title, 'Cafe') %>
-<h1>StaticPages#cafe</h1>
-<p>Find me in app/views/static_pages/cafe.html.erb</p>
+<h1><%= yield(:title) %></h1>
+<h2>GrunWaldのカフェ</h2>
+ <div align="center">
+  <%= image_tag("coffee-786813_640.jpg", alt: "cafe") %>
+ </div>
+ <p>
+ Grunwaldでは月に1回カフェを開いています。<br>
+ 当教室の講師 大森みどり が焼いた天然酵母パンを<br>
+ 皆様に味わっていただくパンのカフェです。
+ </p>
+ <p>
+ 天然酵母のパンはもちろん、洋菓子やキッシュ、月替わりのスープ、<br>
+ こだわりの豆や茶葉を使用した、珈琲や紅茶を用意してお待ちしています。
+ </p>
+<h2>開店日</h2>
+ <p>
+  毎月第4土曜日 （1月、7月、8月はお休みです。）<br>
+  11:30〜15:00
+ </p>
+<h2>メニュー</h2>
+ <p>
+  カフェメニューは毎月異なります。<br>
+  詳細は以下をご覧ください。
+ </p>
+ <p>[todo]pdfリンク。毎月入稿してもらう</p>

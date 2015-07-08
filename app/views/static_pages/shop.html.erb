@@ -1,3 +1,14 @@
 <% provide(:title, 'Shop') %>
-<h1>StaticPages#shop</h1>
-<p>Find me in app/views/static_pages/shop.html.erb</p>
+<h1><%= yield(:title) %></h1>
+ <h2>住所</h2>
+  <p>
+   千葉県千葉市稲毛区黒砂1-5-2<br>
+   （JR西千葉駅から徒歩10分、京成みどり台駅から徒歩2分）
+  </p>
+  <p>
+   <iframe src="http://maps.google.co.jp/maps?q=%E5%8D%83%E8%91%89%E7%9C%8C%E5%8D%83%E8%91%89%E5%B8%82%E7%A8%B2%E6%AF%9B%E5%8C%BA%E9%BB%92%E7%A0%821%E2%88%925%E2%88%922&amp;ie=UTF8&amp;hq=&amp;hnear=%E5%8D%83%E8%91%89%E7%9C%8C%E5%8D%83%E8%91%89%E5%B8%82%E7%A8%B2%E6%AF%9B%E5%8C%BA%E9%BB%92%E7%A0%82%EF%BC%91%E4%B8%81%E7%9B%AE%EF%BC%95%E2%88%92%EF%BC%92&amp;gl=jp&amp;t=m&amp;z=14&amp;brcurrent=3,0x6022837b54ea3463:0xd9dd41484e1f433a,0,0x6022837b50498a59:0x920663e06ef832b5&amp;ll=35.624141,140.095602&amp;output=embed" width="425" height="350" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe><br /><small><a style="color: #0000ff; text-align: left;" href="http://maps.google.co.jp/maps?q=%E5%8D%83%E8%91%89%E7%9C%8C%E5%8D%83%E8%91%89%E5%B8%82%E7%A8%B2%E6%AF%9B%E5%8C%BA%E9%BB%92%E7%A0%821%E2%88%925%E2%88%922&amp;ie=UTF8&amp;hq=&amp;hnear=%E5%8D%83%E8%91%89%E7%9C%8C%E5%8D%83%E8%91%89%E5%B8%82%E7%A8%B2%E6%AF%9B%E5%8C%BA%E9%BB%92%E7%A0%82%EF%BC%91%E4%B8%81%E7%9B%AE%EF%BC%95%E2%88%92%EF%BC%92&amp;gl=jp&amp;t=m&amp;z=14&amp;brcurrent=3,0x6022837b54ea3463:0xd9dd41484e1f433a,0,0x6022837b50498a59:0x920663e06ef832b5&amp;ll=35.624141,140.095602&amp;source=embed">大きな地図で見る</a></small>
+  </p>
+  <p>
+   教室の外階段が教室への入り口です<br>
+   <%= image_tag("shop.png", alt: "shop image") %>
+  </p>
