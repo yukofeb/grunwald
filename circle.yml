@@ -6,4 +6,4 @@ deployment:
   staging:
     branch: master
     heroku:
-      appname: desolate-plateau-1680
+      appname: grunwald-midori
