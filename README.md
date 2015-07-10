@@ -1,4 +1,5 @@
 # GrunWald
+http://grunwald-midori.com/  
 千葉県千葉市の天然酵母パン教室のホームページ。  
 作成中。  
 
@@ -27,6 +28,10 @@ herokuコマンドで設定
 ```
 $ heroku config:add (key)=(value)
 ```
+
+## 利用したサイト
+* [COOLTEXT](http://cooltext.com/)  
+ロゴ画像を作成  
 
 ## memo
 * 作成中のため、フリー画像利用中  
