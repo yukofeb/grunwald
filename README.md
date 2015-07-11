@@ -28,7 +28,9 @@ $ heroku config:add (key)=(value)
 
 ## 利用したサイト
 * [COOLTEXT](http://cooltext.com/)  
-ロゴ画像を作成  
+ロゴ画像（通常版）を作成  
+* [squarespace](http://www.squarespace.com/logo)  
+ロゴ画像（CAT版）を作成  
 
 ## memo
 * 作成中のため、フリー画像利用中  
