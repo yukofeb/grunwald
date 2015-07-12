@@ -8,8 +8,9 @@ http://grunwald-midori.com/
 そのため、それらを環境変数に設定することが必要となる。  
 ```
 # 設定内容
-ENV['MAILER_USER']
-ENV['MAILER_PASSWORD']
+ENV['MAILER_USER'] : メールフォーム用SMTP メールアドレス
+ENV['MAILER_PASSWORD'] : メールフォーム用STMP パスワード
+ENV['STAFF_MAIL'] : GrunWald STAFFが実際に利用しているメールアドレス
 ```
 
 ## ローカル環境
