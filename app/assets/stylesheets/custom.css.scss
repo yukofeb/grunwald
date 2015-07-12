@@ -268,3 +268,9 @@ padding: 6px;
 background-color: #fff;
 border: 1px solid #b9b9b9;
 }
+
+/* etc */
+.with_middle_text p {
+ display:inline-block;
+ vertical-align:middle;
+}
