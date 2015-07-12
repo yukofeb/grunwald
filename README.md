@@ -10,7 +10,6 @@ http://grunwald-midori.com/
 # 設定内容
 ENV['MAILER_USER'] : メールフォーム用SMTP メールアドレス
 ENV['MAILER_PASSWORD'] : メールフォーム用STMP パスワード
-ENV['STAFF_MAIL'] : GrunWald STAFFが実際に利用しているメールアドレス
 ```
 
 ## ローカル環境
