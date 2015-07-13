@@ -5,12 +5,12 @@ http://grunwald-midori.com/
 千葉県千葉市の天然酵母パン教室のホームページ。  
 
 # 利用サービス
-** github  
-** heroku(https://www.heroku.com/)  
-** [CloudFlare](https://www.cloudflare.com/)  
-** [circleci](https://circleci.com/)  
-** [papertrail](https://addons.heroku.com/papertrail) ※herokuアドオン 
-** [New Relic APM](https://addons.heroku.com/newrelic) ※herokuアドオン  
+* github  
+* [heroku](https://www.heroku.com/)  
+* [CloudFlare](https://www.cloudflare.com/)  
+* [circleci](https://circleci.com/)  
+* [papertrail](https://addons.heroku.com/papertrail) ※herokuアドオン   
+* [New Relic APM](https://addons.heroku.com/newrelic) ※herokuアドオン    
 
 # 利用した素材サイト
 * [COOLTEXT](http://cooltext.com/)  
