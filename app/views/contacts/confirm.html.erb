@@ -23,6 +23,34 @@
           </td>
          </tr>
          <tr>
+          <th>電話番号（自宅）</th>
+          <td>
+           <%= f.hidden_field :home_tel %>
+           <%= @contact.home_tel %>
+          </td>
+         </tr>
+         <tr>
+          <th>電話番号（携帯）</th>
+          <td>
+           <%= f.hidden_field :mobile_tel %>
+           <%= @contact.mobile_tel %>
+          </td>
+         </tr>
+         <tr>
+          <th>郵便番号</th>
+          <td>
+           <%= f.hidden_field :zip %>
+           <%= @contact.zip %>
+          </td>
+         </tr>
+         <tr>
+          <th>住所</th>
+          <td>
+           <%= f.hidden_field :address %>
+           <%= @contact.address %>
+          </td>
+         </tr>
+         <tr>
           <th>お問い合せ内容</th>
           <td>
            <%= f.hidden_field :content %>

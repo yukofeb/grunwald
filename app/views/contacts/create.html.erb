@@ -2,18 +2,35 @@
 <h1><%= yield(:title) %></h1>
  <h2>お問い合わせフォーム</h2>
 
+  <p>
+   GrunWaldへのお問い合せは以下からお願いいたします。<br>
+   また、<font color="red">*</font>は必須入力項目です。
+  </p>
+  <br>
   <div class="row">
     <div class="span6 offset3">
       <%= form_for @contact, :url => contact_confirm_path do |f| %>
         <%= render 'shared/error_messages', object: f.object %>
 
-        <%= f.label :name %>
+        <b><font color="red">*</font> お名前(</b><%= f.label :name %><b>)</b>
         <%= f.text_field :name %>
 
-        <%= f.label :email %>
+        <b><font color="red">*</font> メールアドレス(</b><%= f.label :email %><b>)</b>
         <%= f.text_field :email %>
 
-        <%= f.label :content %>
+        <b>電話（自宅）(</b><%= f.label :home_tel %><b>)</b>
+        <%= f.text_field :home_tel %>
+
+        <b>電話（携帯）(</b><%= f.label :mobile_tel %><b>)</b>
+        <%= f.text_field :mobile_tel %>
+
+        <b>郵便番号(</b><%= f.label :zip %><b>)</b>
+        <%= f.text_field :zip %>
+
+        <b>住所(</b><%= f.label :address %><b>)</b>
+        <%= f.text_field :address %>
+
+        <b><font color="red">*</font> お問い合せ内容(</b><%= f.label :content %><b>)</b>
         <%= f.text_area :content, :rows => "10" %>
 
         <%= f.submit "送信内容を確認", class: "btn btn-large btn-primary" %>
