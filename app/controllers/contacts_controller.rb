@@ -23,7 +23,6 @@ class ContactsController < ApplicationController
   private
 
     def contact_params
-      #params.require(:contact).permit(:name, :email, :content)
-      params.fetch(:contact, {}).permit(:name, :email, :content)
+      params.fetch(:contact, {}).permit(:name, :email, :content, :home_tel, :mobile_tel, :zip, :address)
     end
 end
