@@ -1,7 +1,24 @@
-# GrunWald
+GrunWald
+-----
+
 http://grunwald-midori.com/  
 千葉県千葉市の天然酵母パン教室のホームページ。  
-作成中。  
+
+# 利用サービス
+** github  
+** heroku(https://www.heroku.com/)  
+** [CloudFlare](https://www.cloudflare.com/)  
+** [circleci](https://circleci.com/)  
+** [papertrail](https://addons.heroku.com/papertrail) ※herokuアドオン 
+** [New Relic APM](https://addons.heroku.com/newrelic) ※herokuアドオン  
+
+# 利用した素材サイト
+* [COOLTEXT](http://cooltext.com/)  
+ロゴ画像（通常版）を作成  
+* [squarespace](http://www.squarespace.com/logo)  
+ロゴ画像（CAT版）を作成  
+* [pixabay](https://pixabay.com/)  
+仮画像利用中  
 
 # パスワード管理方針
 公開レポジトリのため、各種パスワードやトークンなどはアップロードしない。  
@@ -25,13 +42,3 @@ herokuコマンドで設定
 ```
 $ heroku config:add (key)=(value)
 ```
-
-## 利用したサイト
-* [COOLTEXT](http://cooltext.com/)  
-ロゴ画像（通常版）を作成  
-* [squarespace](http://www.squarespace.com/logo)  
-ロゴ画像（CAT版）を作成  
-
-## memo
-* 作成中のため、フリー画像利用中  
-[pixabay](https://pixabay.com/)  
