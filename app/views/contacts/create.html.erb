@@ -3,8 +3,7 @@
  <h2>お問い合わせフォーム</h2>
 
   <p>
-   GrunWaldへのお問い合せは以下からお願いいたします。<br>
-   また、<font color="red">*</font>は必須入力項目です。
+   GrunWaldへのお問い合せ、パン教室へのお申込みは以下からお願い致します。
   </p>
   <br>
   <div class="row">
@@ -12,11 +11,19 @@
       <%= form_for @contact, :url => contact_confirm_path do |f| %>
         <%= render 'shared/error_messages', object: f.object %>
 
-        <b><font color="red">*</font> お名前(</b><%= f.label :name %><b>)</b>
+        <b>お名前(</b><%= f.label :name %><b>)</b>
         <%= f.text_field :name %>
 
-        <b><font color="red">*</font> メールアドレス(</b><%= f.label :email %><b>)</b>
+        <b>メールアドレス(</b><%= f.label :email %><b>)</b>
         <%= f.text_field :email %>
+
+        <b>お問い合せ内容(</b><%= f.label :content %><b>)</b>
+        <%= f.text_area :content, :rows => "10" %>
+
+        <b><font color="red">
+         ※パン教室へお申込みの方については、以下の4項目もご記入ください。
+        </font></b>
+        <br>
 
         <b>電話（自宅）(</b><%= f.label :home_tel %><b>)</b>
         <%= f.text_field :home_tel %>
@@ -29,9 +36,6 @@
 
         <b>住所(</b><%= f.label :address %><b>)</b>
         <%= f.text_field :address %>
-
-        <b><font color="red">*</font> お問い合せ内容(</b><%= f.label :content %><b>)</b>
-        <%= f.text_area :content, :rows => "10" %>
 
         <%= f.submit "送信内容を確認", class: "btn btn-large btn-primary" %>
       <% end %>
