@@ -23,6 +23,13 @@
           </td>
          </tr>
          <tr>
+          <th>お問い合せ内容</th>
+          <td>
+           <%= f.hidden_field :content %>
+           <%= @contact.content %>
+          </td>
+         </tr>
+         <tr>
           <th>電話番号（自宅）</th>
           <td>
            <%= f.hidden_field :home_tel %>
@@ -48,13 +55,6 @@
           <td>
            <%= f.hidden_field :address %>
            <%= @contact.address %>
-          </td>
-         </tr>
-         <tr>
-          <th>お問い合せ内容</th>
-          <td>
-           <%= f.hidden_field :content %>
-           <%= @contact.content %>
           </td>
          </tr>
         </table>
