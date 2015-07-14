@@ -1,0 +1,45 @@
+- provide(:title, "Contact")
+%h1= yield(:title)
+%h2 お問い合わせ内容確認
+.row
+  .span6.offset3
+    = form_for @contact, :url => contact_thanks_path do |f|
+      = render 'shared/error_messages', object: f.object
+      %table.contact
+        %tr
+          %th お名前
+          %td
+            = f.hidden_field :name
+            = @contact.name
+        %tr
+          %th メール
+          %td
+            = f.hidden_field :email
+            = @contact.email
+        %tr
+          %th お問い合せ内容
+          %td
+            = f.hidden_field :content
+            = @contact.content
+        %tr
+          %th 電話番号（自宅）
+          %td
+            = f.hidden_field :home_tel
+            = @contact.home_tel
+        %tr
+          %th 電話番号（携帯）
+          %td
+            = f.hidden_field :mobile_tel
+            = @contact.mobile_tel
+        %tr
+          %th 郵便番号
+          %td
+            = f.hidden_field :zip
+            = @contact.zip
+        %tr
+          %th 住所
+          %td
+            = f.hidden_field :address
+            = @contact.address
+      %br/
+      = f.submit "送信", class: "btn btn-large btn-primary"

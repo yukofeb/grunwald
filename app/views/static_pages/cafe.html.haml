@@ -1,0 +1,29 @@
+- provide(:title, 'Cafe')
+%h1= yield(:title)
+%h2 GrunWaldのカフェ
+.with_middle_text
+  %p
+    = image_tag("cafe.jpg", class: "withtext", alt: "cafe", height: "500", align: "left", hspace: "20")
+  %p
+    Grunwaldでは月に1回カフェを開いています。
+    %br/
+    当教室の講師 大森みどり が焼いた天然酵母パンを
+    %br/
+    皆様に味わっていただくパンのカフェです。
+    %br/
+    天然酵母のパンはもちろん、
+    %br/
+    洋菓子やキッシュ、月替わりのスープ、
+    %br/
+    こだわりの珈琲や紅茶を用意してお待ちしています。
+  %br{:clear => "left"}/
+%h2 開店日
+%p
+  毎月第4土曜日 （1月、7月、8月はお休みです。）
+  %br/
+  11:30〜15:00
+%h2 メニュー
+%p
+  カフェメニューは毎月異なります。
+  %br/
+  開催日までに告知致します。

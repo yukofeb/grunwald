@@ -1,0 +1,43 @@
+- provide(:title, "Contact")
+%h1= yield(:title)
+%h2 お問い合わせフォーム
+%p
+  GrunWaldへのお問い合せ、パン教室へのお申込みは以下からお願い致します。
+%br/
+.row
+  .span6.offset3
+    = form_for @contact, :url => contact_confirm_path do |f|
+      = render 'shared/error_messages', object: f.object
+      %b お名前(
+      = f.label :name
+      %b )
+      = f.text_field :name
+      %b メールアドレス(
+      = f.label :email
+      %b )
+      = f.text_field :email
+      %b お問い合せ内容(
+      = f.label :content
+      %b )
+      = f.text_area :content, :rows => "10"
+      %b
+        %font{:color => "red"}
+          ※パン教室へお申込みの方については、以下の4項目もご記入ください。
+      %br/
+      %b 電話（自宅）(
+      = f.label :home_tel
+      %b )
+      = f.text_field :home_tel
+      %b 電話（携帯）(
+      = f.label :mobile_tel
+      %b )
+      = f.text_field :mobile_tel
+      %b 郵便番号(
+      = f.label :zip
+      %b )
+      = f.text_field :zip
+      %b 住所(
+      = f.label :address
+      %b )
+      = f.text_field :address
+      = f.submit "送信内容を確認", class: "btn btn-large btn-primary"

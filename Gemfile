@@ -16,6 +16,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # gem 'unicorn'
 # gem 'capistrano-rails', group: :development
 gem 'feed-normalizer'
+gem 'haml-rails'
+gem 'erb2haml'
 
 group :development, :test do
   gem 'sqlite3'
