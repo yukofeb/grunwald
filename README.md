@@ -1,5 +1,5 @@
-# GrunWald
------
+GrunWald
+======================
 
 http://grunwald-midori.com/  
 千葉県千葉市の天然酵母パン教室のホームページ。  
