@@ -18,6 +18,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'feed-normalizer'
 gem 'haml-rails'
 gem 'erb2haml'
+gem 'newrelic_rpm'
 
 group :development, :test do
   gem 'sqlite3'
