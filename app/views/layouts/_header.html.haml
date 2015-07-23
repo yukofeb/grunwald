@@ -11,3 +11,6 @@
             %li{:style => "float:left"}= link_to "Shop", shop_path
             %li{:style => "float:left"}= link_to "Contact", contact_path
             %li{:style => "float:left"}= link_to "Blog", "http://blogs.yahoo.co.jp/chiba_oomori", target: "_new"
+            - if user_signed_in?
+              %li{:style => "float:left"}= link_to "[admin]Login/Logout", login_path
+              %li{:style => "float:left"}= link_to "[admin]Dashboard", rails_admin_path, target: "_new"

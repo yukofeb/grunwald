@@ -1,0 +1,11 @@
+- provide(:title, 'Login/Logout')
+%h1= yield(:title)
+%p
+ STAFF用管理画面です。
+ %br/
+ STAFF以外の方はご利用いただけません。
+ %br/
+ - if user_signed_in?
+  = link_to "Log out", destroy_user_session_path, method: :delete
+ - else
+  = link_to "Log in", user_session_path

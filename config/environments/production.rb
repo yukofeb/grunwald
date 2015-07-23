@@ -88,4 +88,5 @@ Rails.application.configure do
     :user_name => ENV["MAILER_USER"],
     :password => ENV["MAILER_PASSWORD"]
   }
+  config.action_mailer.default_url_options = { host: 'grunwald-midori.com', port: 80 }
 end

@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  devise_for :users
+  mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
+  match '/login', to: 'static_pages#login', via: 'get'
+
   root 'static_pages#home'
   match '/bread', to: 'static_pages#bread', via: 'get'
   match '/cafe', to: 'static_pages#cafe', via: 'get'

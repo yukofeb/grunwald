@@ -19,6 +19,9 @@ gem 'feed-normalizer'
 gem 'haml-rails'
 gem 'erb2haml'
 gem 'newrelic_rpm'
+gem 'devise'
+gem 'rails_admin'
+gem 'cancan'
 
 group :development, :test do
   gem 'sqlite3'
