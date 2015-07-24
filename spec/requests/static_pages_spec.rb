@@ -8,10 +8,10 @@ RSpec.describe "StaticPages", type: :request do
     it { should have_title('Grunwald') }
   end
 
-  describe "Bread Making Class" do
-    before { visit bread_path }
-    it { should have_title('Grunwald | Bread Making Class') }
-  end
+#  describe "Bread Making Class" do
+#    before { visit bread_path }
+#    it { should have_title('Grunwald | Bread Making Class') }
+#  end
 
   describe "Cafe" do
     before { visit cafe_path }
