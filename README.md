@@ -17,8 +17,6 @@ http://grunwald-midori.com/
 ロゴ画像（通常版）を作成  
 * [squarespace](http://www.squarespace.com/logo)  
 ロゴ画像（CAT版）を作成  
-* [pixabay](https://pixabay.com/)  
-仮画像利用中  
 
 ## パスワード管理方針
 公開レポジトリのため、各種パスワードやトークンなどはアップロードしない。  
