@@ -22,7 +22,7 @@
 %h2 講師
 .with_middle_text
   %p
-    = image_tag("midoriomori.jpg", alt: "teacher", height: 300, style: "vertical-align: middle; display: inline-block;", align: "left", hspace: "20")
+    = image_tag("midoriomori.jpg", alt: "teacher", height: 200, style: "vertical-align: middle; display: inline-block;", align: "left", hspace: "20")
   %p
     %b 大森みどり
     %br/
@@ -37,30 +37,30 @@
 %div
   %li 毎年4月開講
   %li 全10回
-  %li 第3火曜と第3土曜の10:00-14:30開講（パン制作、試食タイム込）
   %li 1レッスン5,000円
-%h4 申込
-%h5 2015年度
+%h4 2015年度申込
 %p
+  %li 第3火曜と第3土曜の10:00-14:30開講（パン制作、試食タイム込）
   定員になりました。
   %br/
   以後申し込みされる方はキャンセル待ちとなります。
-%h5 2016年度
+%h4 2016年度申込
 %p
+  %li 第2火曜と第2土曜の10:00-14:30開講（パン制作、試食タイム込）
   %font{:color => "red"}
     申込は2015/10/01 10:00に開始します。
     %br/
     それ以前の申し込みは受け付けできませんので、ご了承ください。
     %br/
-【申込状況】
+%p
+  申し込みは、こちらの#{link_to "リンク", contact_path}から。
+  （プロの方はご遠慮ください）
+  %br/
+【2016年度申込状況】
 %br/
 = @tue_status.description
 %br/
 = @sat_status.description
-%p
-  申し込みは、こちらの#{link_to "リンク", contact_path}から。
-  %br/
-  （プロの方はご遠慮ください）
 %h4 プログラム例
 = image_tag("kiso2012.jpg")
 %h3 応用科
