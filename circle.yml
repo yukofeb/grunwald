@@ -3,11 +3,11 @@ machine:
     version: 2.2.1
 
 deployment:
-  staging:
-    branch: staging
-    heroku:
-      appname: grunwald-midori-staging
   production:
     branch: master
     heroku:
       appname: grunwald-midori
+  staging:
+    branch: staging
+    heroku:
+      appname: grunwald-midori-stg
