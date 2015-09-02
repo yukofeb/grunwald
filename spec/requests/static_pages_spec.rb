@@ -18,8 +18,8 @@ RSpec.describe "StaticPages", type: :request do
     it { should have_title('Grunwald | Cafe') }
   end
 
-  describe "Shop" do
-    before { visit shop_path }
-    it { should have_title('Grunwald | Shop') }
+  describe "Office" do
+    before { visit office_path }
+    it { should have_title('Grunwald | Office') }
   end
 end

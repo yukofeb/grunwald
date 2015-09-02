@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   root 'static_pages#home'
   match '/bread', to: 'static_pages#bread', via: 'get'
   match '/cafe', to: 'static_pages#cafe', via: 'get'
-  match '/shop', to: 'static_pages#shop', via: 'get'
+  match '/office', to: 'static_pages#office', via: 'get'
 
   match '/contact', to: 'contacts#create', via: 'get'
   match '/contact/confirm', to: 'contacts#confirm', via: 'post'

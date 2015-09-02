@@ -10,6 +10,6 @@ class StaticPagesController < ApplicationController
   def cafe
   end
 
-  def shop
+  def office
   end
 end
