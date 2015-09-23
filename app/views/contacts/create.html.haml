@@ -12,30 +12,57 @@
       = f.label :name
       %b )
       = f.text_field :name
-      %b メールアドレス(
-      = f.label :email
+      %br/
+      %br/
+      %b パソコンメール(
+      = f.label :pc_email
       %b )
-      = f.text_field :email
+      = f.text_field :pc_email
+      %br/
+      %br/
       %b お問い合せ内容(
       = f.label :content
       %b )
       = f.text_area :content, :rows => "10"
       %b
         %font{:color => "red"}
-          ※パン教室へお申込みの方については、以下の4項目もご記入ください。
+          ※パン教室へお申込みの方については、以下の項目もご記入ください。
       %br/
-      %b 電話（自宅）(
+      %br/
+      %b 申し込み講座(
+      = f.label :bread_making_course
+      %b )
+      %font{style: "font-size:small" }
+        = f.radio_button :bread_making_course, "kiso_tuesday"
+        = f.label :bread_making_course, "　基礎科（火曜日）", :value => "kiso_tuesday"
+        = f.radio_button :bread_making_course, "kiso_saturday"
+        = f.label :bread_making_course, "　基礎科（土曜日）", :value => "kiso_saturday"
+      %br/
+      %br/
+      %b 自宅電話(
       = f.label :home_tel
       %b )
       = f.text_field :home_tel
-      %b 電話（携帯）(
+      %br/
+      %br/
+      %b 携帯電話(
       = f.label :mobile_tel
       %b )
       = f.text_field :mobile_tel
+      %br/
+      %br/
+      %b 携帯メール(
+      = f.label :mobile_email
+      %b )
+      = f.text_field :mobile_email
+      %br/
+      %br/
       %b 郵便番号(
       = f.label :zip
       %b )
       = f.text_field :zip
+      %br/
+      %br/
       %b 住所(
       = f.label :address
       %b )

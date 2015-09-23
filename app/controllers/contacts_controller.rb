@@ -23,6 +23,6 @@ class ContactsController < ApplicationController
   private
 
     def contact_params
-      params.fetch(:contact, {}).permit(:name, :email, :content, :home_tel, :mobile_tel, :zip, :address)
+      params.fetch(:contact, {}).permit(:name, :pc_email, :mobile_email, :content, :home_tel, :mobile_tel, :zip, :address, :bread_making_course)
     end
 end

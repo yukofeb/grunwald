@@ -1,17 +1,19 @@
 require 'rails_helper'
 
 RSpec.describe Contact, type: :model do
-  before { @contact = Contact.new(name: "Test User", email: "test@example.com",
+  before { @contact = Contact.new(name: "Test User", pc_email: "test@example.com",
       content: "This is description.", home_tel: "000-1234-5678", mobile_tel: "000-1234-5678",
-      zip: "123-4567", address: "東京都千代田区千代田1-1-1") }
+      mobile_email: "mobile@example.ne.jp", zip: "123-4567", address: "東京都千代田区千代田1-1-1",
+      bread_making_course: "kiso_tuesday")}
 
   subject { @contact }
 
   it { should respond_to(:name) }
-  it { should respond_to(:email) }
+  it { should respond_to(:pc_email) }
   it { should respond_to(:content) }
   it { should respond_to(:home_tel) }
   it { should respond_to(:mobile_tel) }
+  it { should respond_to(:mobile_email) }
   it { should respond_to(:zip) }
   it { should respond_to(:address) }
   it { should be_valid }
@@ -21,8 +23,8 @@ RSpec.describe Contact, type: :model do
     it { should_not be_valid }
   end
 
-  describe "when email is not present" do
-    before { @contact.email = "" }
+  describe "when pc_email is not present" do
+    before { @contact.pc_email = "" }
     it { should_not be_valid }
   end
 
@@ -41,6 +43,11 @@ RSpec.describe Contact, type: :model do
     it { should be_valid }
   end
 
+  describe "when mobile_email is not present" do
+    before { @contact.mobile_email = "" }
+    it { should be_valid }
+  end
+
   describe "when zip is not present" do
     before { @contact.zip = "" }
     it { should be_valid }
@@ -51,13 +58,23 @@ RSpec.describe Contact, type: :model do
     it { should be_valid }
   end
 
+  describe "when bread_making_course is not present" do
+    before { @contact.bread_making_course = "" }
+    it { should be_valid }
+  end
+
   describe "when name is too long" do
     before { @contact.name = "a" * 31 }
     it { should_not be_valid }
   end
 
-  describe "when email is too long" do
-    before { @contact.email = "a" * 101 + "@example.com" }
+  describe "when pc_email is too long" do
+    before { @contact.pc_email = "a" * 101 + "@example.com" }
+    it { should_not be_valid }
+  end
+
+  describe "when mobile_email is too long" do
+    before { @contact.mobile_email = "a" * 101 + "@example.com" }
     it { should_not be_valid }
   end
 
@@ -86,21 +103,41 @@ RSpec.describe Contact, type: :model do
     it { should_not be_valid }
   end
 
-  describe "when email format is valid" do
+  describe "when pc_email format is valid" do
     it "should be valid" do
       valid_addresses = %w[user@foo.COM A_US-ER@f.b.org frst.lst@foo.jp a+b@baz.cn]
       valid_addresses.each do |valid_address|
-        @contact.email = valid_address
+        @contact.pc_email = valid_address
         expect(@contact).to be_valid
       end
     end
   end
 
-  describe "when email format is invalid" do
+  describe "when pc_email format is invalid" do
     it "should be invalid" do
       invalid_addresses = %w[aaa.com abc@ aaa@zzz]
       invalid_addresses.each do |invalid_address|
-        @contact.email = invalid_address
+        @contact.pc_email = invalid_address
+        expect(@contact).not_to be_valid
+      end
+    end
+  end
+
+  describe "when mobile_email format is valid" do
+    it "should be valid" do
+      valid_addresses = %w[user@foo.COM A_US-ER@f.b.org frst.lst@foo.jp a+b@baz.cn]
+      valid_addresses.each do |valid_address|
+        @contact.mobile_email = valid_address
+        expect(@contact).to be_valid
+      end
+    end
+  end
+
+  describe "when mobile_email format is invalid" do
+    it "should be invalid" do
+      invalid_addresses = %w[aaa.com abc@ aaa@zzz]
+      invalid_addresses.each do |invalid_address|
+        @contact.mobile_email = invalid_address
         expect(@contact).not_to be_valid
       end
     end
