@@ -26,4 +26,9 @@
 %p
   カフェメニューは毎月異なります。
   %br/
-  開催日までに告知致します。
+  各月のメニューは以下のプルダウンから参照ください。
+  %br
+  ※別タブでPDFが表示されます。
+  %br
+  = form_for @menus do |f|
+    = f.collection_select :name, @menus, :name, :name, :prompt_text=> "選択してください"

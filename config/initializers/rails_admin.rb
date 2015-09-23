@@ -31,4 +31,11 @@ RailsAdmin.config do |config|
     # history_index
     # history_show
   end
+
+  config.model 'Cafemenu' do
+    edit do
+      field :name, :string
+      field :file, :carrierwave
+    end
+  end
 end

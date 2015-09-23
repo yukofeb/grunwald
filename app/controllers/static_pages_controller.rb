@@ -8,8 +8,20 @@ class StaticPagesController < ApplicationController
   end
 
   def cafe
+    @menus = Cafemenu.select(:name).uniq
   end
 
   def office
+  end
+
+  def search_menus
+    @menus = Cafemenu.select(:name).uniq
+  end
+
+  def result
+    @menus = Cafemenu.where(name: params[:name])
+  end
+
+  def open
   end
 end
