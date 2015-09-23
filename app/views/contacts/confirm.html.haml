@@ -12,25 +12,35 @@
             = f.hidden_field :name
             = @contact.name
         %tr
-          %th メール
+          %th パソコンメール
           %td
-            = f.hidden_field :email
-            = @contact.email
+            = f.hidden_field :pc_email
+            = @contact.pc_email
         %tr
           %th お問い合せ内容
           %td
             = f.hidden_field :content
             = @contact.content
         %tr
-          %th 電話番号（自宅）
+          %th 申し込み講座
+          %td
+            = f.hidden_field :bread_making_course
+            = @contact.bread_making_course
+        %tr
+          %th 自宅電話
           %td
             = f.hidden_field :home_tel
             = @contact.home_tel
         %tr
-          %th 電話番号（携帯）
+          %th 携帯電話
           %td
             = f.hidden_field :mobile_tel
             = @contact.mobile_tel
+        %tr
+          %th 携帯メール
+          %td
+            = f.hidden_field :mobile_email
+            = @contact.mobile_email
         %tr
           %th 郵便番号
           %td
