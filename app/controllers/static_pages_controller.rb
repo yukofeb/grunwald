@@ -12,4 +12,9 @@ class StaticPagesController < ApplicationController
 
   def office
   end
+
+  def search_menus
+    @cafemenu_url = params[:cafemenu_url]
+    render
+  end
 end
