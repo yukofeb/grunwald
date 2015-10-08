@@ -15,7 +15,6 @@ class StaticPagesController < ApplicationController
 
   def search_menus
     @cafemenu_url = params[:cafemenu_url]
-    @cafemenu_url.sub!(/http/, 'https')
     render
   end
 end
