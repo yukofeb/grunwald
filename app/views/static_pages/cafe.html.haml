@@ -28,7 +28,6 @@
   %br/
   各月のメニューは以下のプルダウンから参照ください。
   %br
-  ※別タブでPDFが表示されます。
-  %br
-  = form_for @menus do |f|
-    = f.collection_select :name, @menus, :name, :name, :prompt_text=> "選択してください"
+  = form_tag({action: "search_menus"}, remote: true) do
+    = select_tag :cafemenu_url, options_from_collection_for_select(Cafemenu.all, :file, :name)
+    = submit_tag 'View'

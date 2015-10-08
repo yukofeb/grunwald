@@ -26,7 +26,7 @@ http://grunwald-midori.com/
 # 設定内容
 ENV['MAILER_USER'] : メールフォーム用SMTP メールアドレス
 ENV['MAILER_PASSWORD'] : メールフォーム用STMP パスワード
-ENV['CLOUDINARY_URL'] : Cloudinary用設定（herokuのみ有効）
+ENV['CLOUDINARY_URL'] : Cloudinary用設定(URL)
 ```
 
 ### ローカル環境

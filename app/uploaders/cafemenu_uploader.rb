@@ -52,4 +52,6 @@ class CafemenuUploader < CarrierWave::Uploader::Base
   #   "something.jpg" if original_filename
   # end
 
+  process :tags => ['cafemenu']
+
 end
