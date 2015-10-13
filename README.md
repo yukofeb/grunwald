@@ -11,6 +11,7 @@ http://grunwald-midori.com/
 * [circleci](https://circleci.com/)  
 * [papertrail](https://addons.heroku.com/papertrail) ※herokuアドオン   
 * [New Relic APM](https://addons.heroku.com/newrelic) ※herokuアドオン    
+* [Cloudinary](https://addons.heroku.com/cloudinary) ※herokuアドオン    
 
 ## 利用した素材サイト
 * [COOLTEXT](http://cooltext.com/)  
@@ -25,6 +26,7 @@ http://grunwald-midori.com/
 # 設定内容
 ENV['MAILER_USER'] : メールフォーム用SMTP メールアドレス
 ENV['MAILER_PASSWORD'] : メールフォーム用STMP パスワード
+ENV['CLOUDINARY_URL'] : Cloudinary用設定(URL)
 ```
 
 ### ローカル環境

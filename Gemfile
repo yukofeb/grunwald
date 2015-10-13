@@ -22,6 +22,8 @@ gem 'newrelic_rpm'
 gem 'devise'
 gem 'rails_admin'
 gem 'cancan'
+gem 'carrierwave'
+gem 'cloudinary'
 
 group :development, :test do
   gem 'sqlite3'

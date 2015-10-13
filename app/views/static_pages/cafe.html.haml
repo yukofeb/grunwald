@@ -26,4 +26,8 @@
 %p
   カフェメニューは毎月異なります。
   %br/
-  開催日までに告知致します。
+  各月のメニューは以下のプルダウンから参照ください。
+  %br
+  = form_tag({action: "search_menus"}, remote: true) do
+    = select_tag :cafemenu_url, options_from_collection_for_select(Cafemenu.all, :file, :name)
+    = submit_tag 'View'
