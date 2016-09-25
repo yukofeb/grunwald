@@ -5,7 +5,7 @@
   %p
     = image_tag("cafe.jpg", class: "withtext", alt: "cafe", height: "500", align: "left", hspace: "20")
   %p
-    GrunWaldでは定期的にカフェを開いています。
+    GrunWaldでは、春と秋の2日間、カフェを開いています。
     %br/
     当教室の講師 大森みどり が焼いた天然酵母パンを
     %br/
@@ -16,21 +16,9 @@
     洋菓子やキッシュ、月替わりのスープ、
     %br/
     こだわりの珈琲や紅茶を用意してお待ちしています。
+    %br/
+    ※開店日やメニューは
+    %a{:href => "http://blogs.yahoo.co.jp/chiba_oomori"}ブログ
+    をご覧ください。
+    %br/
   %br{:clear => "left"}/
-%h2 開店日
-%p
-  開店日は以下のカレンダーを参照ください。
-  %br/
-  11:30~15:00にopenしています。
-  %br/
-  %br/
-  <iframe src="https://www.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;height=300&amp;wkst=2&amp;bgcolor=%23FFFFFF&amp;src=bmqlt8avpqonc4pttm3tr2f4do%40group.calendar.google.com&amp;color=%23B1440E&amp;ctz=Asia%2FTokyo" style=" border-width:0 " width="800" height="300" frameborder="0" scrolling="no"></iframe>
-%h2 メニュー
-%p
-  カフェメニューは毎回異なります。
-  %br/
-  過去のメニューは以下のプルダウンから参照ください。
-  %br
-  = form_tag({action: "search_menus"}, remote: true) do
-    = select_tag :cafemenu_url, options_from_collection_for_select(Cafemenu.all, :file, :name)
-    = submit_tag 'View'
