@@ -3,7 +3,10 @@
 %h2 お問い合わせフォーム
 %p
   GrunWaldへのお問い合せ、パン教室へのお申込みは以下からお願い致します。
-%br/
+%br
+  本ページから送信できない場合は、臨時メールフォームから送信ください。
+  %a{:href => "https://docs.google.com/forms/d/e/1FAIpQLScIYrnIbvFAn2FG3lW8LEw35u8hle6zwD3pcyK2vSz3jtNy0w/viewform?usp=send_form"}> 臨時メールフォーム
+%br
 .row
   .span6.offset3
     = form_for @contact, :url => contact_confirm_path do |f|
