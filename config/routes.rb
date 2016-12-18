@@ -8,10 +8,7 @@ Rails.application.routes.draw do
   match '/cafe', to: 'static_pages#cafe', via: 'get'
   post '/search_menus' => 'static_pages#search_menus'
   match '/office', to: 'static_pages#office', via: 'get'
-
-  match '/contact', to: 'contacts#create', via: 'get'
-  match '/contact/confirm', to: 'contacts#confirm', via: 'post'
-  match '/contact/thanks', to: 'contacts#thanks', via: 'post'
+  match '/contact', to: 'static_pages#contact', via: 'get'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
