@@ -1,0 +1,21 @@
+- provide(:title, "Contact")
+%h1= yield(:title)
+%h2 お問い合わせフォーム
+%p
+  目的別にいくつかのメールフォームに分かれておりますので、適切なものを選んで送信ください。
+%br
+%table{:border => "1"}
+  %tr
+    %th メールフォーム
+    %th 問い合わせ目的
+  %tr
+    %td
+      %a{:href => "https://docs.google.com/forms/d/e/1FAIpQLScA2_i877iH_EOb4oBEN9fDiAmy8NA7t_b8xwwo5CKgCdw2dA/viewform"} パン教室申し込み用
+    %td
+      %a{:href => "http://grunwald-midori.com/bread"} 天然酵母パン教室
+      に申し込む場合
+  %tr
+    %td
+      %a{:href => "https://docs.google.com/forms/d/e/1FAIpQLScIYrnIbvFAn2FG3lW8LEw35u8hle6zwD3pcyK2vSz3jtNy0w/viewform"} 通常問い合わせ用
+    %td
+      上記の目的に当てはまらない場合
