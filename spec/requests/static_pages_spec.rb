@@ -22,4 +22,9 @@ RSpec.describe "StaticPages", type: :request do
     before { visit office_path }
     it { should have_title('Grunwald -千葉の天然酵母パン教室- | Office') }
   end
+
+  describe "Contact" do
+    before { visit contact_path }
+    it { should have_title('Grunwald -千葉の天然酵母パン教室- | Contact') }
+  end
 end
